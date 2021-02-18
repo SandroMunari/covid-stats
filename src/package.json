@@ -1,0 +1,28 @@
+{
+  "name": "covid19-stats",
+  "version": "1.0.0",
+  "description": "Sağlık bakanlığının sitesine (https://covid19.saglik.gov.tr/) ulaşarak Corona (COVID-19)'un bazı bilgilerini sıralar.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "testqwdqwdqdq"
+  },
+  "keywords": [
+    "corona",
+    "covid",
+    "covid19",
+    "covid19-stats"
+  ],
+  "author": "bris (brightsme.xyz)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}
