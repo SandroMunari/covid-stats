@@ -104,26 +104,6 @@ server.get('/geneldurumjson.json', async (req,res) => {
     }
 });
 
-/*server.get('/ctiytotal.json', async (req, res) => {
-    try {
-        await axios.get("https://covid19.saglik.gov.tr").then(
-            result => {
-                var html = result.data;
-                var $ = cheerio.load(html)
-                $('tbody').each(async (index, element) => {
-                    var tbody = $(element).html().trim()
-                    var sehirler = tbody.replace(/<|>|[0-9]|td|tr|SiteAgacDallar|--|\/|,/g, "").trim()
-                    var değerler = tbody.replace(/|>|[a-zA-Z]|[^A-Za-z0-9]|td|tr|SiteAgacDallar|--|\/|:1.0.0.0/g, "").trim();
-                    console.log(sehirler)
-                })
-            }
-        )
-
-    } catch (error) {
-        console.log(error)
-    }
-})*/
-
 server.listen(port, () => {
     console.log(`${port} sayılı port dinleniyor...`)
 });
